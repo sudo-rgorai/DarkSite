@@ -1,0 +1,10 @@
+{
+    "name": "DarkSite",
+    "short_name": "DarkSite",
+    "description": "Embrace your dark side with DarkSite!",
+    "version": "1.0",
+    "manifest_version": 2,
+    "chrome_url_overrides": {
+      "newtab": "index.html"
+    }
+  }

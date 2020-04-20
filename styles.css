@@ -1,0 +1,28 @@
+body
+{
+    background-color: #000;
+    color: #fff;
+    text-align: center;
+    
+
+}
+
+h1
+{
+    font-family: 'Fredericka the Great', cursive;
+    font-weight: normal;
+    font-size: 6rem;
+}
+
+
+.icon
+{
+    margin: 30px 5vw 30px 5vw;
+    width: 5vw;
+}
+
+/* .links
+{
+    padding-left: auto;
+    padding-right: auto;
+} */
