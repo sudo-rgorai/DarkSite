@@ -21,8 +21,7 @@ h1
     width: 5vw;
 }
 
-/* .links
+.icon:hover
 {
-    padding-left: auto;
-    padding-right: auto;
-} */
+    opacity: 0.5;
+}
