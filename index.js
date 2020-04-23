@@ -1,4 +1,32 @@
+window.onload=function()
+{
+    var url =window.location.href;
+    console.log(url);
+    var present=url.search("=");
+    console.log(present);
 
+    if(present!=-1)
+    {
+        var elements=url.split("=");
+        console.log(elements[1]);
+        document.cookie = "username="+elements[1]+";expires=Fri, 24 Apr 2030 00:00:00 UTC;";
+        this.document.cookie="";
+        console.log(this.document.cookie);
+    }
+    console.log(document.cookie);
+    if(document.cookie.length==0)
+    {
+        window.open("user.html","_parent","","");
+    }
+    else
+    {
+        var name=document.cookie.split("=")[1];
+        console.log(name);
+        var message="Hi "+name+"!";
+        console.log(message);
+        document.querySelector("h1").innerHTML=message;
+    }
+}
 function clock()
 {
     var today = new Date();
@@ -76,7 +104,7 @@ switch(day)
         dayWord="Friday";
         break;
     case 6:
-        dayWord="Satday";
+        dayWord="Saturday";
         break;
 }
 
