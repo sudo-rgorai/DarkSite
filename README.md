@@ -22,3 +22,9 @@ Thats it! You're done! Welcome to the Dark Side.
 ## Something's wrong?
 
 Do open an issue describing the problem.
+
+## Suggestion
+
+Use [Just Black](https://github.com/adam-p/markdown-here/wiki/Markdown-Cheatsheet)  Theme with this extension.
+
+#### \*In Progress*
