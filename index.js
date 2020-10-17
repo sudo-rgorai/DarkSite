@@ -28,7 +28,7 @@ function clock() {
   var date = today.getDate();
   if (date % 10 == 1) date = date + "st";
   else if (date % 10 == 2) date = date + "nd";
-  else if (date % 10 == 2) date = date + "rd";
+  else if (date % 10 == 3) date = date + "rd";
   else date = date + "th";
   var month = today.getMonth() + 1;
   var monthWord;
