@@ -5,6 +5,8 @@
 
 It is a chrome extension that customizes your new tab to a minimal dark theme.
 
+<img src="https://github.com/sudo-rgorai/DarkSite/blob/master/images/demo.png"/>
+
 ----
 ## How to use it?
 
