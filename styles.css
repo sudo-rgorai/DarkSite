@@ -59,7 +59,12 @@ h1
 }
 
 /* Shortcut links */
+
+.icons {
+    width: 200px;
+}
+
 .links {
     display: grid;
-    grid-template-columns: repeat(5, 1fr);
+    grid-template-columns: repeat(auto-fit, 200px);
 }
