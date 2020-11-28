@@ -1,13 +1,11 @@
 # DarkSite
 
-----
 ## What is DarkSite?
 
 It is a chrome extension that customizes your new tab to a minimal dark theme.
 
 <img src="https://github.com/sudo-rgorai/DarkSite/blob/master/images/demo.png"/>
 
-----
 ## How to use it?
 
 1. Clone/Download this repository.
@@ -18,15 +16,14 @@ It is a chrome extension that customizes your new tab to a minimal dark theme.
 6. Browse and select the repository directory.  
   
   
-Thats it! You're done! Welcome to the Dark Side.  
+That's it. You're done! Welcome to the Dark Side.  
 
-----
 ## Something's wrong?
 
 Do open an issue describing the problem.
 
 ## Suggestion
 
-Use [Just Black](https://github.com/adam-p/markdown-here/wiki/Markdown-Cheatsheet)  Theme with this extension.
+Use [Just Black](https://chrome.google.com/webstore/detail/just-black/aghfnjkcakhmadgdomlmlhhaocbkloab)  Theme with this extension.
 
 #### \*In Progress*
