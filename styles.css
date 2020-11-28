@@ -18,7 +18,7 @@ h1
 
 .icon
 {
-    margin: 30px 5vw 30px 5vw;
+    margin: 30px 10px;
     width: 5vw;
 }
 
@@ -60,11 +60,17 @@ h1
 
 /* Shortcut links */
 
-.icons {
-    width: 200px;
-}
-
 .links {
     display: grid;
-    grid-template-columns: repeat(auto-fit, 200px);
+    grid-template-columns: repeat(5, 1fr);
+}
+
+@media(max-width: 1000px) {
+    .icon {
+        width: 50px;
+    }
+
+    .links {
+        grid-template-columns: repeat(auto-fit, 200px);
+    }
 }
