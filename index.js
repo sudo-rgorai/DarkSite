@@ -22,7 +22,15 @@ window.onload = function () {
     console.log(message);
     document.querySelector("h1").innerHTML = message;
   }
+
+  fetch('quotes.txt')
+  .then(response => response.text())
+  .then(data => {
+    var res = data.split("\n");
+    document.getElementById('quote').textContent = res[Math.floor((Math.random()*50)+1)];
+  });
 };
+
 function clock() {
   var today = new Date();
   var date = today.getDate();
