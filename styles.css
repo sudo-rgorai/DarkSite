@@ -16,10 +16,11 @@ h1
 }
 
 #quote{
-    font-size: 1.6rem;
+    font-size: 1.2rem;
     max-width: 85%;
     margin: 20px 100px;
-    font-family: 'Comic Sans MS';
+    margin-top: 0px;
+    font-family: 'Montserrat', sans-serif;
 }
 
 #quote:hover{
