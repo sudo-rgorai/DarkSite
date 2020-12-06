@@ -20,12 +20,15 @@ window.onload = function() {
     var myDate = new Date();
     var hrs = myDate.getHours();
     var message;
-    if (hrs < 12)
+    if (hrs >= 2 && hrs < 12)
       message = 'Good Morning, ' + name + '!';
     else if (hrs >= 12 && hrs <= 17)
       message = 'Good Afternoon, ' + name + '!';
-    else if (hrs >= 17 && hrs <= 24)
+    else if (hrs >= 17 && hrs <= 20)
       message = 'Good Evening, ' + name + '!';
+    else
+      message = 'Welcome Back, ' + name + '!';
+
     console.log(message);
     document.getElementById("greet").innerHTML = message;
   }
