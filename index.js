@@ -17,9 +17,17 @@ window.onload = function() {
   } else {
     var name = document.cookie.split("=")[1];
     console.log(name);
-    var message = "Hi " + name + "!";
+    var myDate = new Date();
+    var hrs = myDate.getHours();
+    var message;
+    if (hrs < 12)
+      message = 'Good Morning, ' + name + '!';
+    else if (hrs >= 12 && hrs <= 17)
+      message = 'Good Afternoon, ' + name + '!';
+    else if (hrs >= 17 && hrs <= 24)
+      message = 'Good Evening, ' + name + '!';
     console.log(message);
-    document.querySelector("h1").innerHTML = message;
+    document.getElementById("greet").innerHTML = message;
   }
 };
 function clock() {
@@ -111,17 +119,3 @@ function clock() {
   setTimeout(clock, 1000);
 }
 clock();
-
-var myDate = new Date();
-var hrs = myDate.getHours();
-
-var message;
-
-if (hrs < 12)
-  message = 'Good Morning';
-else if (hrs >= 12 && hrs <= 17)
-  message = 'Good Afternoon';
-else if (hrs >= 17 && hrs <= 24)
-  message = 'Good Evening';
-
-document.getElementById('greet').innerHTML = message;
