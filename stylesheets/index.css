@@ -11,6 +11,13 @@ h1 {
   margin: 50px;
 }
 
+#quote{
+  font-size: 1.6rem;
+  max-width: 85%;
+  margin: 20px 100px;
+  font-family: 'Comic Sans MS';
+}
+
 .icon {
   margin: 30px 10px;
   width: 5vw;
