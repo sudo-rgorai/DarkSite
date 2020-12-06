@@ -1,4 +1,4 @@
-window.onload = function () {
+window.onload = function() {
   var url = window.location.href;
   console.log(url);
   var present = url.search("=");
@@ -7,8 +7,7 @@ window.onload = function () {
   if (present != -1) {
     var elements = url.split("=");
     console.log(elements[1]);
-    document.cookie =
-      "username=" + elements[1] + ";expires=Fri, 24 Apr 2030 00:00:00 UTC;";
+    document.cookie = "username=" + elements[1] + ";expires=Fri, 24 Apr 2030 00:00:00 UTC;";
     this.document.cookie = "";
     console.log(this.document.cookie);
   }
@@ -26,10 +25,14 @@ window.onload = function () {
 function clock() {
   var today = new Date();
   var date = today.getDate();
-  if (date % 10 == 1) date = date + "st";
-  else if (date % 10 == 2) date = date + "nd";
-  else if (date % 10 == 3) date = date + "rd";
-  else date = date + "th";
+  if (date % 10 == 1)
+    date = date + "st";
+  else if (date % 10 == 2)
+    date = date + "nd";
+  else if (date % 10 == 3)
+    date = date + "rd";
+  else
+    date = date + "th";
   var month = today.getMonth() + 1;
   var monthWord;
   switch (month) {
@@ -99,8 +102,7 @@ function clock() {
 
   var date = date + " " + monthWord + " " + today.getFullYear();
 
-  var time =
-    today.getHours() + ":" + today.getMinutes() + ":" + today.getSeconds();
+  var time = today.getHours() + ":" + today.getMinutes() + ":" + today.getSeconds();
   var dateTime = `${dayWord} &nbsp&nbsp&nbsp&nbsp&nbsp&nbsp ${date} &nbsp&nbsp&nbsp&nbsp&nbsp&nbsp ${time}`;
   document.querySelector(".date").innerHTML = dateTime;
   document.querySelector(".date").style.fontSize = "1rem";
@@ -109,3 +111,15 @@ function clock() {
   setTimeout(clock, 1000);
 }
 clock();
+
+var myDate = new Date();
+var hrs = myDate.getHours();
+
+var greet;
+
+if (hrs < 12)
+  message = 'Good Morning';
+else if (hrs >= 12 && hrs <= 17)
+  message = 'Good Afternoon';
+else if (hrs >= 17 && hrs <= 24)
+  message = 'Good Evening';
