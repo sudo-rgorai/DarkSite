@@ -115,7 +115,7 @@ clock();
 var myDate = new Date();
 var hrs = myDate.getHours();
 
-var greet;
+var message;
 
 if (hrs < 12)
   message = 'Good Morning';
@@ -123,3 +123,5 @@ else if (hrs >= 12 && hrs <= 17)
   message = 'Good Afternoon';
 else if (hrs >= 17 && hrs <= 24)
   message = 'Good Evening';
+
+document.getElementById('greet').innerHTML = message;
