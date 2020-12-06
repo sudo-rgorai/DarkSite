@@ -1,0 +1,36 @@
+body {
+  background-color: #000;
+  color: #fff;
+  text-align: center;
+}
+
+h1 {
+  font-family: "Fredericka the Great", cursive;
+  font-weight: normal;
+  font-size: 6rem;
+  margin: 50px;
+}
+
+.icon {
+  margin: 30px 10px;
+  width: 5vw;
+}
+
+.icon:hover {
+  opacity: 0.5;
+}
+
+.links {
+  display: grid;
+  grid-template-columns: repeat(5, 1fr);
+}
+
+@media (max-width: 1000px) {
+  .icon {
+    width: 50px;
+  }
+
+  .links {
+    grid-template-columns: repeat(auto-fit, 200px);
+  }
+}
