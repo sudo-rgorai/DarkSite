@@ -11,6 +11,15 @@ h1 {
   margin: 50px;
 }
 
+#quote{
+  font-size: 1rem;
+  max-width: 50%;
+  margin: 20px auto 50px auto;
+  margin-bottom: 50px;
+  font-family: 'Montserrat', sans-serif;
+  opacity: 50%;
+}
+
 .icon {
   margin: 30px 10px;
   width: 5vw;
