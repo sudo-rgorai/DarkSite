@@ -22,7 +22,7 @@ h1 {
 
 .icon {
   margin: 30px 10px;
-  width: 5vw;
+  width: 50px;
 }
 
 .icon:hover {
@@ -30,16 +30,18 @@ h1 {
 }
 
 .links {
-  display: grid;
-  grid-template-columns: repeat(5, 1fr);
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  width: 60vw;
+  margin: 75px auto 0 auto;
 }
 
-@media (max-width: 1000px) {
-  .icon {
-    width: 50px;
-  }
+.grid-item {
+  flex: 0 0 calc(16.66% - 20px);
+  margin: 0 20px;
+}
 
-  .links {
-    grid-template-columns: repeat(auto-fit, 200px);
-  }
+* {
+  box-sizing: border-box;
 }
