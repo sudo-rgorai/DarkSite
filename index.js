@@ -26,7 +26,7 @@ window.onload = function() {
     document.getElementById("greet").innerHTML = message;
   }
 
-  fetch('quotes.txt')
+  fetch('assets/quotes.txt')
   .then(response => response.text())
   .then(data => {
     const res = data.split("\n");
