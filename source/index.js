@@ -1,0 +1,2 @@
+window.onload = hello();
+clock();
