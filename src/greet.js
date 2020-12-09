@@ -1,5 +1,5 @@
 
-function hello() {
+function greet() {
     const url = window.location.href;
     const present = url.search("=");
   
