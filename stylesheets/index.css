@@ -45,3 +45,116 @@ h1 {
 * {
   box-sizing: border-box;
 }
+
+.top-level-menu
+{
+    list-style: none;
+    padding: 0;
+    margin-bottom: 10px;
+    left: 0;
+}
+
+.top-level-menu > li
+{
+    position: relative;
+    float: left;
+    height: 40px;
+    width: 200px;  
+}
+
+.top-level-menu li:hover > ul
+{
+    /* On hover, display the next level's menu */
+    display: inline;
+    transition: all 0.5s ease;
+}
+
+/* Menu Link Styles */
+
+.top-level-menu a /* Apply to all links inside the multi-level menu */
+{
+    font-family: inherit;
+    font-size: large;
+    color: black;
+    text-decoration: none;
+    margin-bottom: 10px; 
+    
+    /* Make the link cover the entire list item-container */
+    display: block; 
+    line-height: 40px;
+    cursor: pointer;
+}
+
+#settings{
+  color: white;
+}
+
+.second-level-menu
+{
+    position: absolute;
+    top: 30px;
+    left: 0;
+    width: 220px;
+    list-style: none;
+    padding: 0;
+    margin: 10px 0px;
+    display: none;
+    min-width: 160px;
+    box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+    z-index: 1;
+    /*right: 0;*/
+}
+
+.second-level-menu > li
+{
+    position: relative;
+    height: 40px;
+    background: #f9f9f9;
+    color: black;
+}
+.second-level-menu > li:hover 
+{ 
+  background: #ddd; 
+}
+
+#third-level-menu{
+  width: 220px;
+  height: 40px;
+  font-size: large;
+  border: 0px;
+  text-align: center;
+  left: 0px;
+  position: absolute;
+  top: 0;
+  right: -150px;
+  list-style: none;
+  padding: 0;
+  margin: 0;
+  cursor: pointer;
+  /*display: none;*/
+}
+
+#third-level-menu > option
+{
+    height: 40px;
+    background: #f9f9f9;
+    color: black;
+    position: relative;
+    border: 0px;
+}
+
+#third-level-menu:hover
+{
+    background: #ddd;
+    border: 0px;
+    transition: all 0.5s ease;
+}
+
+select {
+  font-size: .9rem;
+  padding: 2px 5px;
+  height: 40px;
+  border: 0px;
+  cursor: pointer;
+  left: 0px;
+}
