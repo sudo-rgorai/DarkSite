@@ -8,7 +8,7 @@ h1 {
   font-family: "Fredericka the Great", cursive;
   font-weight: normal;
   font-size: 4.8rem;
-  margin: 50px;
+  margin: 40px;
 }
 
 #quote{
@@ -21,7 +21,7 @@ h1 {
 }
 
 .icon {
-  margin: 30px 10px;
+  margin: 35px 10px;
   width: 50px;
 }
 
@@ -34,7 +34,7 @@ h1 {
   flex-wrap: wrap;
   justify-content: center;
   width: 60vw;
-  margin: 75px auto 0 auto;
+  margin: 9px auto 0 auto;
 }
 
 .grid-item {
