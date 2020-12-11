@@ -11,6 +11,39 @@ h1 {
   margin: 40px;
 }
 
+#search-form{
+  width:800px; 
+  margin:0px auto;
+}
+
+#search{
+  width: 75%;
+  padding: 15px 20px 9.5px 20px;
+  margin: 10px 0px;
+  display: inline-block;
+  border: 2px solid red;	
+  box-sizing: border-box;
+font-size:16px;
+}
+
+#search:hover {
+ background-color: #EEDDDA;
+}
+
+#search-btn {
+  background-color: #fff;    
+  padding: 20px 20px 20px 20px ;
+  margin: 10px 0px;
+  border: 2px solid red;	
+  padding: 10px;  
+  cursor: pointer;
+  width: 10%;
+}
+
+#search-btn:hover {
+   background-color: #AEEEE8;
+}
+
 #quote{
   font-size: 1rem;
   max-width: 50%;

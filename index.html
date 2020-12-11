@@ -12,48 +12,11 @@
     </div>
     <h1 id = "greet"></h1>
     <div id="quote"></div>
-	
-	
-	<meta charset="utf-8">
-<style>
-*{margin:0px; padding:1px;font-family: Helvetica, Arial, sans-serif;}
-form{width:800px; margin:0px auto;}
 
-input[type=text]{
-    width: 75%;
-    padding: 15px 20px 9.5px 20px;
-    margin: 10px 0px;
-    display: inline-block;
-    border: 2px solid red;	
-    box-sizing: border-box;
-	font-size:16px;
-}
-input[type=text]:hover {
-   background-color: #EEDDDA;
-}
-button {
-    background-color: #fff;    
-    padding: 20px 20px 20px 20px ;
-    margin: 10px 0px;
-    border: 2px solid red;	
-    padding: 10px;  
-    cursor: pointer;
-    width: 10%;
-	
-	
-}
-button:hover {
-   	background-color: #AEEEE8;
-}
-
-</style>
-
-<form action="http://www.google.com/search" class="searchform" method="get" name="searchform" >
-	
-	<input autocomplete="off" name="q" placeholder="Search on Google" required="required" type="text">
-    <button type="submit"><img src="assets\images\search_button.svg" width="20px" height="19px"></button>
-</form>
-
+    <form id="search-form" action="http://www.google.com/search" class="searchform" method="get" name="searchform" >
+	    <input id="search" autocomplete="off" name="q" placeholder="Search on Google" required="required" type="text">
+        <button id="search-btn" type="submit"><img src="assets\images\search_button.svg" width="20px" height="19px"></button>
+    </form>
 
     <div class="links">
         <a href="https://www.google.com" class="grid-item"><img src="assets/images/google.svg" class="icon"></a>
