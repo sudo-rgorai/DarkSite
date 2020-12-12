@@ -8,7 +8,40 @@ h1 {
   font-family: "Fredericka the Great", cursive;
   font-weight: normal;
   font-size: 4.8rem;
-  margin: 50px;
+  margin: 40px;
+}
+
+#search-form{
+  width:800px; 
+  margin:0px auto;
+}
+
+#search{
+  width: 75%;
+  padding: 15px 20px 9.5px 20px;
+  margin: 10px 0px;
+  display: inline-block;
+  border: 2px solid red;	
+  box-sizing: border-box;
+font-size:16px;
+}
+
+#search:hover {
+ background-color: #EEDDDA;
+}
+
+#search-btn {
+  background-color: #fff;    
+  padding: 20px 20px 20px 20px ;
+  margin: 10px 0px;
+  border: 2px solid red;	
+  padding: 10px;  
+  cursor: pointer;
+  width: 10%;
+}
+
+#search-btn:hover {
+   background-color: #AEEEE8;
 }
 
 #quote{
@@ -21,7 +54,7 @@ h1 {
 }
 
 .icon {
-  margin: 30px 10px;
+  margin: 35px 10px;
   width: 50px;
 }
 
@@ -34,7 +67,7 @@ h1 {
   flex-wrap: wrap;
   justify-content: center;
   width: 60vw;
-  margin: 75px auto 0 auto;
+  margin: 9px auto 0 auto;
 }
 
 .grid-item {
