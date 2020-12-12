@@ -102,7 +102,6 @@ h1 {
     min-width: 160px;
     box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
     z-index: 1;
-    /*right: 0;*/
 }
 
 .second-level-menu > li
@@ -117,7 +116,7 @@ h1 {
   background: #ddd; 
 }
 
-#third-level-menu{
+.bgcolor, #third-level-menu{
   width: 220px;
   height: 40px;
   font-size: large;
@@ -128,10 +127,9 @@ h1 {
   top: 0;
   right: -150px;
   list-style: none;
-  padding: 0;
+  padding: 0.45rem 2.7rem;
   margin: 0;
   cursor: pointer;
-  /*display: none;*/
 }
 
 #third-level-menu > option
@@ -143,7 +141,7 @@ h1 {
     border: 0px;
 }
 
-#third-level-menu:hover
+.bgcolor:hover , #third-level-menu:hover
 {
     background: #ddd;
     border: 0px;
@@ -151,10 +149,23 @@ h1 {
 }
 
 select {
-  font-size: .9rem;
-  padding: 2px 5px;
+  font-size: large;
+  padding: 2px 0px;
   height: 40px;
   border: 0px;
   cursor: pointer;
   left: 0px;
+}
+
+.color:hover > ul{
+  display: inline;
+}
+
+.bgcolor{
+  padding: 0.45rem;
+  display: none;
+}
+
+.bgcolor:hover{
+  display: inline;
 }

@@ -95,7 +95,7 @@ function time_format(){
   var hours = today.getHours();
   
   if(format.selectedIndex == 0)
-    num=24;
+    num=12;
   else {num = format.options[format.selectedIndex].value;}
   
   if(num==24)
@@ -104,8 +104,10 @@ function time_format(){
   }
   else if(num==12)
   {
+    if(hours==0)
+      var time = "12:" + today.getMinutes() + ":" + today.getSeconds() + " AM";
 
-    if(hours<12)
+    else if(hours<12)
     {
       var time = today.getHours() + ":" + today.getMinutes() + ":" + today.getSeconds() + " AM";
     }

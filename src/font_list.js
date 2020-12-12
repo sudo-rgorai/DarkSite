@@ -12,7 +12,7 @@ fetch('./fonts/font_list.json')
 
 var select = document.getElementById('fonts');
       
-document.getElementById('fonts').onclick = function() {
+select.onclick = function() {
 
     for (const val of values) {
       var option = document.createElement("option");
