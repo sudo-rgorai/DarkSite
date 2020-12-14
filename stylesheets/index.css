@@ -127,7 +127,7 @@ font-size:16px;
     position: absolute;
     top: 30px;
     left: 0;
-    width: 220px;
+    width: 280px;
     list-style: none;
     padding: 0;
     margin: 10px 0px;
@@ -150,7 +150,7 @@ font-size:16px;
 }
 
 .bgcolor, #third-level-menu{
-  width: 220px;
+  width: 280px;
   height: 40px;
   font-size: large;
   border: 0px;
@@ -160,7 +160,7 @@ font-size:16px;
   top: 0;
   right: -150px;
   list-style: none;
-  padding: 0.45rem 2.7rem;
+  padding: 0.45rem 4.4rem;
   margin: 0;
   cursor: pointer;
 }

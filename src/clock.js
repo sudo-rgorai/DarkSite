@@ -88,16 +88,18 @@ function clock() {
 }
 
 var format = document.getElementById('third-level-menu');
-	format.addEventListener('change', time_format, false);
+  format.addEventListener('change', timeChange, false);
+
+function timeChange(){
+  num = format.options[format.selectedIndex].value;
+  setCookie("time",num,365);
+}
 
 function time_format(){
   var today = new Date();
   var hours = today.getHours();
-  
-  if(format.selectedIndex == 0)
-    num=12;
-  else {num = format.options[format.selectedIndex].value;}
-  
+
+  num = getCookie("time");
   if(num==24)
   {
     var time = today.getHours() + ":" + today.getMinutes() + ":" + today.getSeconds();

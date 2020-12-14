@@ -11,7 +11,7 @@ function greet() {
     if (document.cookie.length == 0) {
       window.open("user.html", "_parent", "", "");
     } else {
-      const name = document.cookie.split("=")[1];
+      var name = getCookie("username");
       const myDate = new Date();
       const hrs = myDate.getHours();
       let message;

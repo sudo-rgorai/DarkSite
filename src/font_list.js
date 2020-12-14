@@ -11,21 +11,22 @@ fetch('./fonts/font_list.json')
     .catch(err => { throw err });
 
 var select = document.getElementById('fonts');
-      
-select.onclick = function() {
+
+function updateFont(){
 
     for (const val of values) {
       var option = document.createElement("option");
       option.value = val;
       option.text = val.charAt(0).toUpperCase() + val.slice(1);
-      select.appendChild(option);
+      if(select.childElementCount < 1024)
+        select.appendChild(option);
     }
     
-    if(select.selectedIndex != 0)
-    	var fontFamily = select.options[select.selectedIndex].value;
-    
-    document.querySelector('#quote').style.font = fontFamily;
+    fontFamily = select.options[select.selectedIndex].value;
+    fontlink(fontFamily);
+}
 
+function fontlink(fontFamily){
     var link = document.createElement('link');
     link.rel = 'preconnect';
     link.href = 'https://fonts.gstatic.com';
@@ -37,4 +38,7 @@ select.onclick = function() {
     document.head.appendChild(familylink);
 
     document.getElementsByTagName('h1')[0].style.fontFamily = fontFamily;
+    setCookie("font",fontFamily,365);
 }
+
+select.addEventListener('click',updateFont,false);
