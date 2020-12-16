@@ -8,32 +8,63 @@
     <title>New Tab</title>
 </head>
 <body>
-    <div class="date">
+    <div class="settings">
+        <ul class="top-level-menu">
+            <li><a href="#" id="settings">Settings</a>
+                <ul class="second-level-menu">
+                    <li><a href="user.html">Change Username</a></li>
+                    <li><a href="#" id="color">Background Color</a>
+                        <ul class="bgcolor">
+                            <li><input type="color" id="favcolor" value="#000000"></input></li>
+                        </ul>
+                    </li>
+                    <li>
+                        <select id="third-level-menu">
+                            <option value="12">Clock Format</option>
+                            <option value=12>12 Hour</option>
+                            <option value="24">24 Hour</option>
+                        </select>
+                    </li>
+                    <li><select id="fonts">
+                            <option value="Fredericka the Great">Font Styles</option>
+                        </select>
+                    </li>
+                </ul>
+            </li>
+        </ul>      
     </div>
-    <h1 id = "greet"></h1>
-    <div id="quote"></div>
 
-    <form id="search-form" action="http://www.google.com/search" class="searchform" method="get" name="searchform" >
-	    <input id="search" autocomplete="off" name="q" placeholder="Search on Google" required="required" type="text">
-        <button id="search-btn" type="submit"><img src="assets\images\search_button.svg" width="20px" height="19px"></button>
-    </form>
+    <div class="date"></div>
+  <div style="clear: both;">
+      <h1 id = "greet"></h1>
+      <div id="quote"></div>
 
-    <div class="links">
-        <a href="https://www.google.com" class="grid-item"><img src="assets/images/google.svg" class="icon"></a>
-        <a href="https://www.gmail.com" class="grid-item"><img src="assets/images/gmail.svg" class="icon"></a>
-        <a href="https://drive.google.com" class="grid-item"><img src="assets/images/drive.svg" class="icon"></a>
-        <a href="https://www.youtube.com" class="grid-item"><img src="assets/images/youtube.svg" class="icon"></a>
-        <a href="https://www.facebook.com" class="grid-item"><img src="assets/images/facebook.svg" class="icon"></a>
-        <!-- <br> -->
-        <a href="https://www.github.com" class="grid-item"><img src="assets/images/github.svg" class="icon"></a>
-        <a href="https://www.medium.com" class="grid-item"><img src="assets/images/medium.svg" class="icon"></a>
-        <a href="https://www.quora.com" class="grid-item"><img src="assets/images/quora.svg" class="icon"></a>
-        <a href="https://www.amazon.in" class="grid-item"><img src="assets/images/amazon.svg" class="icon"></a>
-        <a href="https://www.spotify.com" class="grid-item"><img src="assets/images/spotify.svg" class="icon"></a>
-    </div>
+      <form id="search-form" action="http://www.google.com/search" class="searchform" method="get" name="searchform" >
+        <input id="search" autocomplete="off" name="q" placeholder="Search on Google" required="required" type="text">
+          <button id="search-btn" type="submit"><img src="assets\images\search_button.svg" width="20px" height="19px"></button>
+      </form>
+
+      <div class="links">
+          <a href="https://www.google.com" class="grid-item"><img src="assets/images/google.svg" class="icon"></a>
+          <a href="https://www.gmail.com" class="grid-item"><img src="assets/images/gmail.svg" class="icon"></a>
+          <a href="https://drive.google.com" class="grid-item"><img src="assets/images/drive.svg" class="icon"></a>
+          <a href="https://www.youtube.com" class="grid-item"><img src="assets/images/youtube.svg" class="icon"></a>
+          <a href="https://www.facebook.com" class="grid-item"><img src="assets/images/facebook.svg" class="icon"></a>
+          <!-- <br> -->
+          <a href="https://www.github.com" class="grid-item"><img src="assets/images/github.svg" class="icon"></a>
+          <a href="https://www.medium.com" class="grid-item"><img src="assets/images/medium.svg" class="icon"></a>
+          <a href="https://www.quora.com" class="grid-item"><img src="assets/images/quora.svg" class="icon"></a>
+          <a href="https://www.amazon.in" class="grid-item"><img src="assets/images/amazon.svg" class="icon"></a>
+          <a href="https://www.spotify.com" class="grid-item"><img src="assets/images/spotify.svg" class="icon"></a>
+      </div>
+  </div>
     <script type="text/javascript" src="src/greet.js"></script>
+    <script type="text/javascript" src="src/cookies.js"></script>
     <script type="text/javascript" src="src/clock.js"></script>
+    <script type="text/javascript" src="fonts/font_list.json"></script>
+    <script type="text/javascript" src="src/bg-color.js"></script>
+    <script type="text/javascript" src="src/font_list.js"></script>
     <script type="text/javascript" src="src/index.js"></script>
-
+    
 </body>
 </html>

@@ -78,11 +78,48 @@ function clock() {
   
     var date = `${date} ${monthWord} ${today.getFullYear()}`;
   
-    const time = `${today.getHours()}:${today.getMinutes()}:${today.getSeconds()}`;
+    const time = time_format();
     const dateTime = `${dayWord} &nbsp&nbsp&nbsp&nbsp&nbsp&nbsp ${date} &nbsp&nbsp&nbsp&nbsp&nbsp&nbsp ${time}`;
     document.querySelector(".date").innerHTML = dateTime;
     document.querySelector(".date").style.fontSize = "1rem";
     document.querySelector(".date").style.fontWeight = "50";
     document.querySelector(".date").style.marginTop = "25px";
     setTimeout(clock, 1000);
+}
+
+var format = document.getElementById('third-level-menu');
+  format.addEventListener('change', timeChange, false);
+
+function timeChange(){
+  num = format.options[format.selectedIndex].value;
+  setCookie("time",num,365);
+}
+
+function time_format(){
+  var today = new Date();
+  var hours = today.getHours();
+
+  num = getCookie("time");
+  if(num==24)
+  {
+    var time = today.getHours() + ":" + today.getMinutes() + ":" + today.getSeconds();
   }
+  else if(num==12)
+  {
+    if(hours==0)
+      var time = "12:" + today.getMinutes() + ":" + today.getSeconds() + " AM";
+
+    else if(hours<12)
+    {
+      var time = today.getHours() + ":" + today.getMinutes() + ":" + today.getSeconds() + " AM";
+    }
+  
+    else if(hours>12)
+    {
+      var time = today.getHours()-12 + ":" + today.getMinutes() + ":" + today.getSeconds() + " PM";
+    }
+    else time = today.getHours() + ":" + today.getMinutes() + ":" + today.getSeconds() + " PM";
+  }
+
+  return time;
+}
