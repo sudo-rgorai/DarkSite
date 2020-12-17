@@ -1,3 +1,7 @@
+html {
+  scroll-behavior: smooth;
+}
+
 body {
   background-color: #000;
   color: #fff;
@@ -21,9 +25,10 @@ h1 {
   padding: 15px 20px 9.5px 20px;
   margin: 10px 0px;
   display: inline-block;
-  border: 2px solid red;	
+  border: 2px solid #808080;	
   box-sizing: border-box;
 font-size:16px;
+border-radius: 6px;
 }
 
 #search:hover {
@@ -34,7 +39,8 @@ font-size:16px;
   background-color: #fff;    
   padding: 20px 20px 20px 20px ;
   margin: 10px 0px;
-  border: 2px solid red;	
+  border-radius: 6px;
+  border: 2px solid #808080;	
   padding: 10px;  
   cursor: pointer;
   width: 10%;
@@ -51,6 +57,15 @@ font-size:16px;
   margin-bottom: 50px;
   font-family: 'Montserrat', sans-serif;
   opacity: 50%;
+}
+
+#greet{
+  color: #fff;
+  transition: color 0.5s ease-in;
+}
+
+#greet:hover{
+  color: #585858;
 }
 
 .icon {
@@ -106,24 +121,32 @@ font-size:16px;
 
 .top-level-menu a /* Apply to all links inside the multi-level menu */
 {
+    
     font-family: inherit;
     font-size: large;
     color: black;
     text-decoration: none;
     margin-bottom: 10px; 
-    
     /* Make the link cover the entire list item-container */
     display: block; 
     line-height: 40px;
     cursor: pointer;
 }
 
+.date{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
 #settings{
-  color: white;
+  background-color: #000;
+  border-radius: 3px;
 }
 
 .second-level-menu
 {
+    background-color: red;
     position: absolute;
     top: 30px;
     left: 0;
@@ -131,6 +154,7 @@ font-size:16px;
     list-style: none;
     padding: 0;
     margin: 10px 0px;
+    border-radius: 10px;
     display: none;
     min-width: 160px;
     box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
@@ -143,10 +167,6 @@ font-size:16px;
     height: 40px;
     background: #f9f9f9;
     color: black;
-}
-.second-level-menu > li:hover 
-{ 
-  background: #ddd; 
 }
 
 .bgcolor, #third-level-menu{
@@ -189,6 +209,7 @@ select {
   cursor: pointer;
   left: 0px;
 }
+
 
 .color:hover > ul{
   display: inline;
