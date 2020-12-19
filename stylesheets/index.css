@@ -99,6 +99,7 @@ font-size:16px;
 {
     /* On hover, display the next level's menu */
     display: inline;
+    
     transition: all 0.5s ease;
 }
 
@@ -149,23 +150,26 @@ font-size:16px;
   background: #ddd; 
 }
 
-.bgcolor, #third-level-menu{
+.bgcolor, #third-level-menu, #fonts{
   width: 280px;
   height: 40px;
   font-size: large;
   border: 0px;
   text-align: center;
+  text-align-last: center;
   left: 0px;
   position: absolute;
   top: 0;
   right: -150px;
   list-style: none;
-  padding: 0.45rem 4.4rem;
+  /* padding: 0.45rem 4.4rem; */
   margin: 0;
   cursor: pointer;
 }
 
-#third-level-menu > option
+
+
+#third-level-menu > option, #fonts > option
 {
     height: 40px;
     background: #f9f9f9;
@@ -189,6 +193,7 @@ select {
   cursor: pointer;
   left: 0px;
 }
+
 
 .color:hover > ul{
   display: inline;

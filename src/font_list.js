@@ -13,7 +13,7 @@ fetch('./fonts/font_list.json')
 var select = document.getElementById('fonts');
 
 function updateFont(){
-
+    
     for (const val of values) {
       var option = document.createElement("option");
       option.value = val;
@@ -40,5 +40,5 @@ function fontlink(fontFamily){
     document.getElementsByTagName('h1')[0].style.fontFamily = fontFamily;
     setCookie("font",fontFamily,365);
 }
-
-select.addEventListener('click',updateFont,false);
+var settings = document.getElementById("settings");
+settings.addEventListener('click',updateFont,false);
