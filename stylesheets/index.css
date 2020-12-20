@@ -225,3 +225,9 @@ select {
 .bgcolor:hover{
   display: inline;
 }
+
+.date
+{
+  position: relative;
+  right: 100px;
+}
