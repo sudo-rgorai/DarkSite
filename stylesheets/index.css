@@ -76,6 +76,12 @@ border: none;
   opacity: 50%;
 }
 
+.date{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
 .icon {
   margin: 35px 10px;
   width: 50px;
