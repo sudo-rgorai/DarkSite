@@ -5,6 +5,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="stylesheets/index.css">
     <link rel="stylesheet" href="stylesheets/fonts.css">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.15.1/css/all.css" integrity="sha384-vp86vTRFVJgpjF9jiIGPEEqYqlDwgyBgEF109VFjmqGmIY/Y4HV4d3Gp2irVfcrp" crossorigin="anonymous">
     <title>New Tab</title>
 </head>
 <body>
@@ -25,8 +26,7 @@
                             <option value="24">24 Hour</option>
                         </select>
                     </li>
-                    <li>
-                        <select id="fonts">
+                    <li><select id="fonts">
                             <option value="Fredericka the Great">Font Styles</option>
                         </select>
                     </li>
@@ -34,16 +34,23 @@
             </li>
         </ul>      
     </div>
-    <br>
+
     <div class="date"></div>
-    <div style="clear: both;">
+  <div style="clear: both;">
       <h1 id = "greet"></h1>
       <div id="quote"></div>
-
+    
+     <div id="search-bar">
       <form id="search-form" action="http://www.google.com/search" class="searchform" method="get" name="searchform" >
+        <i class="fas fa-search" style="color: gray; font-size: 1.5rem;"></i>
         <input id="search" autocomplete="off" name="q" placeholder="Search on Google" required="required" type="text">
-          <button id="search-btn" type="submit"><img src="assets\images\search_button.svg" width="20px" height="19px"></button>
+
+        
+     
+      
+          <!-- <button id="search-btn" type="submit"><img src="assets\images\search_button.svg" width="20px" height="19px"></button> -->
       </form>
+    </div>
 
       <div class="links">
           <a href="https://www.google.com" class="grid-item"><img src="assets/images/google.svg" class="icon"></a>
