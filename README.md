@@ -1,6 +1,15 @@
 # DarkSite
 
-## What is DarkSite?
+[![forthebadge](https://forthebadge.com/images/badges/built-with-love.svg)](https://forthebadge.com)
+[![forthebadge](https://forthebadge.com/images/badges/built-by-developers.svg)](https://forthebadge.com)
+[![forthebadge](https://forthebadge.com/images/badges/made-with-javascript.svg)](https://forthebadge.com)
+[![forthebadge](https://forthebadge.com/images/badges/built-with-swag.svg)](https://forthebadge.com)
+
+[![GitHub issues](https://img.shields.io/github/issues/sudo-rgorai/DarkSite?color=Green&style=for-the-badge)](https://github.com/sudo-rgorai/DarkSite/issues)
+[![GitHub forks](https://img.shields.io/github/forks/sudo-rgorai/DarkSite?style=for-the-badge)](https://github.com/sudo-rgorai/DarkSite/network)
+[![GitHub stars](https://img.shields.io/github/stars/sudo-rgorai/DarkSite?color=violet&style=for-the-badge)](https://github.com/sudo-rgorai/DarkSite/stargazers)
+
+## About Project
 
 It is a chrome extension that customizes your new tab to a minimal dark theme.
 
@@ -16,11 +25,16 @@ It is a chrome extension that customizes your new tab to a minimal dark theme.
 6. Browse and select the repository directory.  
   
   
-That's it. You're done! Welcome to the Dark Side.  
+That's it. You're done! Welcome to the Dark Side.
+
+## Tech Stack Used:
++ HTML, CSS, JavaScript
 
 ## Something's wrong?
 
 Do open an issue describing the problem.
+
+
 
 ## Suggestion
 
