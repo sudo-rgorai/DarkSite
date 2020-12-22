@@ -6,8 +6,9 @@
 [![forthebadge](https://forthebadge.com/images/badges/built-with-swag.svg)](https://forthebadge.com)
 
 [![GitHub issues](https://img.shields.io/github/issues/sudo-rgorai/DarkSite?color=Green&style=for-the-badge)](https://github.com/sudo-rgorai/DarkSite/issues)
-[![GitHub forks](https://img.shields.io/github/forks/sudo-rgorai/DarkSite?style=for-the-badge)](https://github.com/sudo-rgorai/DarkSite/network)
-[![GitHub stars](https://img.shields.io/github/stars/sudo-rgorai/DarkSite?color=violet&style=for-the-badge)](https://github.com/sudo-rgorai/DarkSite/stargazers)
+![GitHub closed pull requests](https://img.shields.io/github/issues-pr-closed-raw/sudo-rgorai/DarkSite?style=for-the-badge)
+
+
 
 ## About Project
 
