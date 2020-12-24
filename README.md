@@ -1,9 +1,7 @@
 # DarkSite
 
-[![forthebadge](https://forthebadge.com/images/badges/built-with-love.svg)](https://forthebadge.com)
 [![forthebadge](https://forthebadge.com/images/badges/built-by-developers.svg)](https://forthebadge.com)
 [![forthebadge](https://forthebadge.com/images/badges/made-with-javascript.svg)](https://forthebadge.com)
-[![forthebadge](https://forthebadge.com/images/badges/built-with-swag.svg)](https://forthebadge.com)
 
 [![GitHub issues](https://img.shields.io/github/issues/sudo-rgorai/DarkSite?color=Green&style=for-the-badge)](https://github.com/sudo-rgorai/DarkSite/issues)
 ![GitHub closed pull requests](https://img.shields.io/github/issues-pr-closed-raw/sudo-rgorai/DarkSite?style=for-the-badge)
@@ -12,7 +10,7 @@
 
 ## About Project
 
-It is a chrome extension that customizes your new tab to a minimal dark theme.
+DarkSite is a chrome extension that customizes your new tab to a minimal dark theme.
 
 <img src="https://github.com/sudo-rgorai/DarkSite/blob/master/images/demo.png"/>
 
@@ -28,7 +26,7 @@ It is a chrome extension that customizes your new tab to a minimal dark theme.
   
 That's it. You're done! Welcome to the Dark Side.
 
-## Tech Stack Used:
+## Tech Stack:
 + HTML, CSS, JavaScript
 
 ## Something's wrong?
