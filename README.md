@@ -1,18 +1,33 @@
-# DarkSite
-
 <p align="center">
     <img width="250px" src="https://github.com/sudo-rgorai/DarkSite/blob/master/assets/images/logo_dark.png"/>
 </p>
 
-[![forthebadge](https://forthebadge.com/images/badges/built-by-developers.svg)](https://forthebadge.com)
-[![forthebadge](https://forthebadge.com/images/badges/made-with-javascript.svg)](https://forthebadge.com)
+<p align="center">
 
-[![GitHub issues](https://img.shields.io/github/issues/sudo-rgorai/DarkSite?color=Green&style=for-the-badge)](https://github.com/sudo-rgorai/DarkSite/issues)
-![GitHub closed pull requests](https://img.shields.io/github/issues-pr-closed-raw/sudo-rgorai/DarkSite?style=for-the-badge)
+<a href="https://forthebadge.com" alt="Built with love">
+    <img src="https://forthebadge.com/images/badges/built-with-love.svg" />
+</a>
+<a href="https://forthebadge.com" alt="Made with javascript">
+    <img src="https://forthebadge.com/images/badges/made-with-javascript.svg" />
+</a>
+<br/>
+<a href="https://github.com/sudo-rgorai/DarkSite/issues" alt="GitHub issues">
+    <img src="https://img.shields.io/github/issues/sudo-rgorai/DarkSite?color=Green&style=for-the-badge" />
+</a>
+<a href="https://github.com/sudo-rgorai/DarkSite/pulls" alt="GitHub issues">
+    <img src="https://img.shields.io/github/issues-pr-closed-raw/sudo-rgorai/DarkSite?style=for-the-badge" />
+</a>
+<a href="https://github.com/sudo-rgorai/DarkSite/graphs/contributors" alt="GitHub issues">
+    <img src="https://img.shields.io/github/contributors-anon/sudo-rgorai/DarkSite?style=for-the-badge" />
+</a>
+<a href="https://github.com/sudo-rgorai/DarkSite/commits/master" alt="GitHub issues">
+    <img src="https://img.shields.io/github/last-commit/sudo-rgorai/DarkSite?style=for-the-badge" />
+</a>
+
+</p>
 
 
-
-## About Project
+## About
 
 DarkSite is a chrome extension that customizes your new tab to a minimal dark theme.
 
