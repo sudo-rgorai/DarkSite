@@ -108,6 +108,7 @@ border: none;
     padding: 0;
     margin-bottom: 10px;
     left: 0;
+    padding-left: 5px;
 }
 
 .top-level-menu > li
@@ -129,8 +130,10 @@ border: none;
 
 .top-level-menu a /* Apply to all links inside the multi-level menu */
 {
-    font-family: inherit;
-    font-size: large;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 0.8rem;
+    text-transform: uppercase;
+    font-weight: 600;
     color: black;
     text-decoration: none;
     margin-bottom: 10px; 
@@ -186,6 +189,10 @@ border: none;
   padding: 0.45rem 4.4rem;
   margin: 0;
   cursor: pointer;
+  font-family: Arial, Helvetica, sans-serif;
+  font-size: 0.8rem;
+  text-transform: uppercase;
+  font-weight: 600;
 }
 
 #third-level-menu > option
@@ -211,6 +218,17 @@ select {
   border: 0px;
   cursor: pointer;
   left: 0px;
+}
+
+select#fonts {
+  font-family: Arial, Helvetica, sans-serif;
+  font-size: 0.8rem;
+  text-transform: uppercase;
+  font-weight: 600;
+}
+
+select#fonts:hover {
+  background-color: #ddd;
 }
 
 .color:hover > ul{
