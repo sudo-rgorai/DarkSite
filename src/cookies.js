@@ -33,6 +33,9 @@ function setCookie(cname,cvalue,exdays) {
         else if(name=="time="){
           return cvalue;
         }
+        else if(name=="search="){
+          return cvalue;
+        }
       }
     }
   }
