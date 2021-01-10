@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -8,9 +9,13 @@
     <!-- google fonts -->
     <link href="https://fonts.googleapis.com/css2?family=Righteous&display=swap" rel="stylesheet">
     <!-- font awesome links -->
-    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.15.1/css/all.css" integrity="sha384-vp86vTRFVJgpjF9jiIGPEEqYqlDwgyBgEF109VFjmqGmIY/Y4HV4d3Gp2irVfcrp" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.15.1/css/all.css"
+        integrity="sha384-vp86vTRFVJgpjF9jiIGPEEqYqlDwgyBgEF109VFjmqGmIY/Y4HV4d3Gp2irVfcrp" crossorigin="anonymous">
+    <!-- jquery links -->
+    <script src="https://code.jquery.com/jquery-3.5.1.min.js"></script>
     <title>New Tab</title>
 </head>
+
 <body>
     <div class="settings">
         <ul class="top-level-menu">
@@ -29,46 +34,58 @@
                             <option value="24">24 Hour</option>
                         </select>
                     </li>
+                    <li>
+                        <select class="search-engine">
+                            <option>Google</option>
+                            <option>DuckDuckGo</option>
+                            <option>Yahoo</option>
+                            <option>Bing</option>
+                            <option>Qwant</option>
+                        </select>
+                    </li>
                     <li><select id="fonts">
                             <option value="Fredericka the Great">Font Styles</option>
                         </select>
                     </li>
                 </ul>
             </li>
-        </ul>      
+        </ul>
     </div>
 
     <div class="date"></div>
-  <div style="clear: both;">
-      <h1 id = "greet"></h1>
-      <div id="quote"></div>
-    
-     <div id="search-bar">
-      <form id="search-form" action="http://www.google.com/search" class="searchform" method="get" name="searchform" >
-        <i class="fas fa-search" style="color: gray; font-size: 1.5rem;"></i>
-        <input id="search" autocomplete="off" name="q" placeholder="Search on Google" required="required" type="text">
+    <div style="clear: both;">
+        <h1 id="greet"></h1>
+        <div id="quote"></div>
 
-        
-     
-      
-          <!-- <button id="search-btn" type="submit"><img src="assets\images\search_button.svg" width="20px" height="19px"></button> -->
-      </form>
+        <div id="search-bar">
+            <form id="search-form" action="http://www.google.com/search" class="searchform" method="get"
+                name="searchform">
+                <i class="fas fa-search" style="color: gray; font-size: 1.5rem;"></i>
+                <input id="search" autocomplete="off" name="q" placeholder="Type Something to Search"
+                    required="required" type="text">
+
+
+
+
+                <!-- <button id="search-btn" type="submit"><img src="assets\images\search_button.svg" width="20px" height="19px"></button> -->
+            </form>
+        </div>
+
+        <div class="links">
+            <a href="https://www.google.com" class="grid-item"><img src="assets/images/google.svg" class="icon"></a>
+            <a href="https://www.gmail.com" class="grid-item"><img src="assets/images/gmail.svg" class="icon"></a>
+            <a href="https://drive.google.com" class="grid-item"><img src="assets/images/drive.svg" class="icon"></a>
+            <a href="https://www.youtube.com" class="grid-item"><img src="assets/images/youtube.svg" class="icon"></a>
+            <a href="https://www.facebook.com" class="grid-item"><img src="assets/images/facebook.svg" class="icon"></a>
+            <!-- <br> -->
+            <a href="https://www.github.com" class="grid-item"><img src="assets/images/github.svg" class="icon"></a>
+            <a href="https://www.medium.com" class="grid-item"><img src="assets/images/medium.svg" class="icon"></a>
+            <a href="https://www.quora.com" class="grid-item"><img src="assets/images/quora.svg" class="icon"></a>
+            <a href="https://www.amazon.in" class="grid-item"><img src="assets/images/amazon.svg" class="icon"></a>
+            <a href="https://www.spotify.com" class="grid-item"><img src="assets/images/spotify.svg" class="icon"></a>
+        </div>
     </div>
-
-      <div class="links">
-          <a href="https://www.google.com" class="grid-item"><img src="assets/images/google.svg" class="icon"></a>
-          <a href="https://www.gmail.com" class="grid-item"><img src="assets/images/gmail.svg" class="icon"></a>
-          <a href="https://drive.google.com" class="grid-item"><img src="assets/images/drive.svg" class="icon"></a>
-          <a href="https://www.youtube.com" class="grid-item"><img src="assets/images/youtube.svg" class="icon"></a>
-          <a href="https://www.facebook.com" class="grid-item"><img src="assets/images/facebook.svg" class="icon"></a>
-          <!-- <br> -->
-          <a href="https://www.github.com" class="grid-item"><img src="assets/images/github.svg" class="icon"></a>
-          <a href="https://www.medium.com" class="grid-item"><img src="assets/images/medium.svg" class="icon"></a>
-          <a href="https://www.quora.com" class="grid-item"><img src="assets/images/quora.svg" class="icon"></a>
-          <a href="https://www.amazon.in" class="grid-item"><img src="assets/images/amazon.svg" class="icon"></a>
-          <a href="https://www.spotify.com" class="grid-item"><img src="assets/images/spotify.svg" class="icon"></a>
-      </div>
-  </div>
+    <script type="text/javascript" src="src/search-engine.js"></script>
     <script type="text/javascript" src="src/greet.js"></script>
     <script type="text/javascript" src="src/cookies.js"></script>
     <script type="text/javascript" src="src/clock.js"></script>
@@ -76,6 +93,7 @@
     <script type="text/javascript" src="src/bg-color.js"></script>
     <script type="text/javascript" src="src/font_list.js"></script>
     <script type="text/javascript" src="src/index.js"></script>
-    
+
 </body>
+
 </html>
