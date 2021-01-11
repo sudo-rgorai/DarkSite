@@ -164,12 +164,8 @@ border: none;
 {
     position: relative;
     height: 40px;
-    background: #f9f9f9;
-    color: black;
-}
-.second-level-menu > li:hover 
-{ 
-  background: #ddd; 
+    /* background: #f9f9f9;
+    color: black; */
 }
 
 .bgcolor, .search-engine, #fonts,  #third-level-menu{
@@ -191,13 +187,13 @@ border: none;
 #third-level-menu > option
 {
     height: 40px;
-    background: #f9f9f9;
-    color: black;
+    background: #212529;
+    color: #fff;
     position: relative;
     border: 0px;
 }
 
-.bgcolor:hover , #third-level-menu:hover
+.bgcolor:hover
 {
     background: #ddd;
     border: 0px;
@@ -228,17 +224,21 @@ select {
 
 .date
 {
+  font-family: 'Montserrat', sans-serif;
   position: relative;
   right: 100px;
 }
 
-.top-level-menu  li ul li, option, li ul li select {
-  background: rgb(62, 155, 192);
+.top-level-menu  li ul li, .second-level-menu li a, option, li ul li select, #third-level-menu {
+  color: #fff;
+  background: #212529;
+  border-radius: 3px;
 }
 
-.top-level-menu li ul li:hover, option:hover, li ul li select:hover {
+.second-level-menu li a:hover, #fonts:hover, .search-engine:hover, #third-level-menu:hover
+{ 
   color: #000;
-  background-color: #fff;
+  background: #fff; 
 }
 
 li, li select option, li select {
