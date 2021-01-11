@@ -172,7 +172,7 @@ border: none;
   background: #ddd; 
 }
 
-.bgcolor, #third-level-menu{
+.bgcolor, .search-engine, #fonts,  #third-level-menu{
   width: 280px;
   height: 40px;
   font-size: large;
@@ -230,4 +230,17 @@ select {
 {
   position: relative;
   right: 100px;
+}
+
+.top-level-menu  li ul li, option, li ul li select {
+  background: rgb(62, 155, 192);
+}
+
+.top-level-menu li ul li:hover, option:hover, li ul li select:hover {
+  color: #000;
+  background-color: #fff;
+}
+
+li, li select option, li select {
+  font-family: 'Overpass', sans-serif;
 }
