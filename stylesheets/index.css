@@ -193,13 +193,6 @@ border: none;
     border: 0px;
 }
 
-.bgcolor:hover
-{
-    background: #ddd;
-    border: 0px;
-    transition: all 0.5s ease;
-}
-
 select {
   font-size: large;
   padding: 2px 0px;
@@ -218,10 +211,6 @@ select {
   display: none;
 }
 
-.bgcolor:hover{
-  display: inline;
-}
-
 .date
 {
   font-family: 'Montserrat', sans-serif;
@@ -238,7 +227,8 @@ select {
 .second-level-menu li a:hover, #fonts:hover, .search-engine:hover, #third-level-menu:hover
 { 
   color: #000;
-  background: #fff; 
+  background: #fff;
+  border: solid #6c757d; 
 }
 
 li, li select option, li select {
