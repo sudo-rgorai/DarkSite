@@ -16,13 +16,13 @@ function greet() {
       const hrs = myDate.getHours();
       let message;
       if (hrs >= 2 && hrs < 12)
-        message = `Good Morning, ${name}!`;
+        message = name ? `Good Morning, ${name}!` : "Good Morning!";
       else if (hrs >= 12 && hrs <= 17)
-        message = `Good Afternoon, ${name}!`;
+        message = name ?  `Good Afternoon, ${name}!` : "Good Afternoon!" ;
       else if (hrs >= 17 && hrs <= 20)
-        message = `Good Evening, ${name}!`;
+        message = name ?  `Good Evening, ${name}!` : "Good Evening!";
       else
-        message = `Welcome Back, ${name}!`;
+        message = name ?  `Welcome Back, ${name}!` : "Welcome Back!";
   
       document.getElementById("greet").innerHTML = message;
     }
