@@ -1,5 +1,5 @@
 <p align="center">
-    <img width="250px" src="https://github.com/sudo-rgorai/DarkSite/blob/master/assets/images/logo_dark.png"/>
+    <img width="250px" src="https://github.com/sudo-rgorai/DarkSite/blob/main/assets/images/logo_dark.png"/>
 </p>
 
 <p align="center">
@@ -20,7 +20,7 @@
 <a href="https://github.com/sudo-rgorai/DarkSite/graphs/contributors" alt="GitHub issues">
     <img src="https://img.shields.io/github/contributors-anon/sudo-rgorai/DarkSite?style=for-the-badge" />
 </a>
-<a href="https://github.com/sudo-rgorai/DarkSite/commits/master" alt="GitHub issues">
+<a href="https://github.com/sudo-rgorai/DarkSite/commits/main" alt="GitHub issues">
     <img src="https://img.shields.io/github/last-commit/sudo-rgorai/DarkSite?style=for-the-badge" />
 </a>
 
@@ -31,7 +31,7 @@
 
 DarkSite is a chrome extension that customizes your new tab to a minimal dark theme.
 
-<img src="https://github.com/sudo-rgorai/DarkSite/blob/master/assets/images/demo.png"/>
+<img src="https://github.com/sudo-rgorai/DarkSite/blob/main/assets/images/demo.png"/>
 
 ## How to use it?
 
